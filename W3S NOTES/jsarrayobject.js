@@ -186,15 +186,43 @@ console.log(result);
 // fill() ✨
 // Fill the elements in an array with a static value
 
+// Fills specified elements in an array with a value
+// Overwrites the original array
+
 // Parameter - - - Description
+// value - - - Required; the value to fill in
+// start - - - Optional; the start index (position); Default is 0
+// end - - - Optional; the stop index (position); Default is array length
+
 // Return Value Type - - - Description
+// An array - - - The filled array
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+var originalA = ["painting", "singing", "baking", "dancing", "coding"];
+
+console.log(originalA);
+
+originalA.fill("Sneezing");
+
+console.log(originalA);
+
+// output 1
+// (5) ['painting', 'singing', 'baking', 'dancing', 'coding']
+// output 2
+// (5) ['Sneezing', 'Sneezing', 'Sneezing', 'Sneezing', 'Sneezing']
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // filter() ✨
 // Creates a new array with every element in an array that pass a test
 
-// find()
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
+// find() ✨
 // Returns the value of the first element in an array that pass a test
 
 // Parameter - - - Description
@@ -202,7 +230,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// findIndex()
+// findIndex() ✨
 // Returns the index of the first element in an array that pass a test
 
 // Parameter - - - Description
@@ -210,7 +238,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// forEach()
+// forEach() ✨
 // Calls a function for each array element
 
 // Parameter - - - Description
@@ -218,7 +246,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// from()
+// from() ✨
 // Creates an array from an object
 
 // Parameter - - - Description
@@ -226,7 +254,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// includes()
+// includes() ✨
 // Check if an array contains the specified element
 
 // Parameter - - - Description
@@ -234,7 +262,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// indexOf()
+// indexOf() ✨
 // Search the array for an element and returns its position
 
 // Parameter - - - Description
@@ -242,7 +270,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// isArray()
+// isArray() ✨
 // Checks whether an object is an array
 
 // Parameter - - - Description
@@ -250,7 +278,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// join()
+// join() ✨
 // Joins all elements of an array into a string
 
 // Parameter - - - Description
@@ -258,7 +286,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// keys()
+// keys() ✨
 // Returns a Array Iteration Object, containing the keys of the original array
 
 // Parameter - - - Description
@@ -266,7 +294,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// lastIndexOf()
+// lastIndexOf() ✨
 // Search the array for an element, starting at the end, and returns its position
 
 // Parameter - - - Description
@@ -274,7 +302,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// map()
+// map() ✨
 // Creates a new array with the result of calling a function for each array element
 
 // Parameter - - - Description
@@ -282,7 +310,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// pop()
+// pop() ✨
 // Removes the last element of an array, and returns that element
 
 // Parameter - - - Description
@@ -290,7 +318,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// push()
+// push() ✨
 // Adds new elements to the end of an array, and returns the new length
 
 // Parameter - - - Description
@@ -298,7 +326,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// reduce()
+// reduce() ✨
 // Reduce the values of an array to a single value (going left-to-right)
 
 // Parameter - - - Description
@@ -306,7 +334,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// reduceRight()
+// reduceRight() ✨
 // Reduce the values of an array to a single value (going right-to-left)
 
 // Parameter - - - Description
@@ -314,7 +342,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// reverse()
+// reverse() ✨
 // Reverses the order of the elements in an array
 
 // Parameter - - - Description
@@ -322,7 +350,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// shift()
+// shift() ✨
 // Removes the first element of an array, and returns that element
 
 // Parameter - - - Description
@@ -330,7 +358,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// slice()
+// slice() ✨
 // Selects a part of an array, and returns the new array
 
 // Parameter - - - Description
@@ -338,7 +366,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// some()
+// some() ✨
 // Checks if any of the elements in an array pass a test
 
 // Parameter - - - Description
@@ -346,7 +374,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// sort()
+// sort() ✨
 // Sorts the elements of an array
 
 // Parameter - - - Description
@@ -354,7 +382,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// splice()
+// splice() ✨
 // Adds/Removes elements from an array
 
 // Parameter - - - Description
@@ -362,7 +390,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// toString()
+// toString() ✨
 // Converts an array to a string, and returns the result
 
 // Parameter - - - Description
@@ -370,7 +398,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// unshift()
+// unshift() ✨
 // Adds new elements to the beginning of an array, and returns the new length
 
 // Parameter - - - Description
@@ -378,7 +406,7 @@ console.log(result);
 // 🤍🐸 E X A M P L E 🤍🐸 //
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// valueOf()
+// valueOf() ✨
 // Returns the primitive value of an array
 
 // Parameter - - - Description
