@@ -586,9 +586,66 @@ console.log(`The last index position of Rye is... \n...${indexB}`);
 // map() ✨
 // Creates a new array with the result of calling a function for each array element
 
+// Creates a new array from calling a function for every array element
+// Calls a function once for each element in the array
+// Does not execute the function for empty elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function() - - - Required; a function to be run for each array element
+// currentValue - - - Required; the value of the current element
+// index - - - Optional; the index of the current element
+// arr - - - Optional; the array of the current element
+// thisValue - - - Optional; default value is UNDEFINED; a value passed to the function to be used as its *this* value
+
 // Return Value Type - - - Description
+// An array - - - The results of a function for each array element
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const numbiez = [1, 2, 3, 4, 5];
+const newNumbiez = numbiez.map(times3);
+
+function times3(num) {
+    return num * 3;
+};
+
+console.log(newNumbiez);
+
+// output
+// (5) [3, 6, 9, 12, 15]
+    // 0: 3
+    // 1: 6
+    // 2: 9
+    // 3: 12
+    // 4: 15
+    // length: 5
+
+// Again, with an Object
+
+const myKids = [
+    {firstname: "Sophia", middlename: "Gabrielle"},
+    {firstname: "Charlotte", middlename: "Danger-Marie"},
+    {firstname: "Henry", middlename: "Thomas"},
+    {firstname: "Pepper", middlename: "Arlene"},
+];
+
+let mykidResults = myKids.map(namesTogether);
+
+function namesTogether(name) {
+    return [name.firstname,name.middlename].join(" ");
+};
+
+console.log(mykidResults);
+
+// output
+// (4) ['Sophia Gabrielle', 'Charlotte Danger-Marie', 'Henry Thomas', 'Pepper Arlene']
+    // 0: "Sophia Gabrielle"
+    // 1: "Charlotte Danger-Marie"
+    // 2: "Henry Thomas"
+    // 3: "Pepper Arlene"
+    // length: 4
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // pop() ✨
