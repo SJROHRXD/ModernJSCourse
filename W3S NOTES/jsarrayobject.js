@@ -491,9 +491,36 @@ console.log(`Is ✨ nebulae ✨ an array? \n...${resultNebbies}`);
 // join() ✨
 // Joins all elements of an array into a string
 
+// Returns an array as a string
+// Does not change the original array
+// Any separator can be specified, the default is a comma
+
 // Parameter - - - Description
+// separator - - - Optional; the separator to be used; default is a comma
+
 // Return Value Type - - - Description
+// A string - - - The array values, separated by the specified separator
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Indigo"];
+let colorsText = colors.join();
+
+document.getElementById("joinmethod").innerHTML = colorsText;
+
+// output
+// Red,Orange,Yellow,Green,Blue,Violet,Indigo
+
+// Again! With a separator specified:
+
+const colors2 = ["Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Indigo"];
+let colorsText2 = colors2.join(` 🤍 and then 🤍 `);
+
+document.getElementById("joinmethod2").innerHTML = colorsText2;
+
+// output
+// Red 🤍 and then 🤍 Orange 🤍 and then 🤍 Yellow 🤍 and then 🤍 Green 🤍 and then 🤍 Blue 🤍 and then 🤍 Violet 🤍 and then 🤍 Indigo
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // keys() ✨
