@@ -310,9 +310,37 @@ console.log(`🌻🌿🌷 The first even number is ${result4}! 🌻🌿🌷`);
 // findIndex() ✨
 // Returns the index of the first element in an array that pass a test
 
+// Executes a function for each array element
+// Returns the index (position) of the first element that passes a test
+// Returns -1 if no match is found
+// Does not execute the function for empty array elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function() - - - Required; a function to run for each array element
+// currentValue - - - Required; the value of the current element
+// index - - - Optional; the index of the current element
+// arr - - - Optional; the array of the current element
+// thisValue - - - Optional, a value passed to the function as its *this* value; Default UNDEFINED
+
 // Return Value Type - - - Description
+// A number - - - the index of the first element that passes the test; otherwise returns -1
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const digits = [1, 2, 3, 4, 5];
+const result5 = digits.findIndex(checkOver3);
+
+function checkOver3(dig) {
+    return dig > 3;
+};
+
+console.log(`🌷 The first "digit" greater than 3 is in this position of the array: ${result5}! 🌷`);
+// well that was lengthy
+
+// output
+// 🌷 The first "digit" greater than 3 is in this position of the array: 3! 🌷
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // forEach() ✨
