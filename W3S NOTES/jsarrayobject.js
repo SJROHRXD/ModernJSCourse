@@ -380,9 +380,29 @@ boopNs.forEach(ellie => console.log(`For each: ${ellie}! ⚡`));
 // from() ✨
 // Creates an array from an object
 
+// Returns an array from any object with a length property
+// Returns an array from any iterable object
+// Array.from() is a static property of the JavaScript Array object
+// Using x.from(), where x is an array, will return UNDEFINED
+
 // Parameter - - - Description
+// object - - - Required; the object to convert to an array
+// mapFunction - - - Optional; a map function to call on each item
+// thisValue - - - Optional; a value to use as *this* for the mapFunction
+
 // Return Value Type - - - Description
+// An array - - - The values from the iterable object
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+let gingerBoom = "ABCDEFG";
+const gingArr = Array.from(gingerBoom);
+
+console.log(`The array: ${gingArr}`)
+
+// output
+// The array: A,B,C,D,E,F,G
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // includes() ✨
