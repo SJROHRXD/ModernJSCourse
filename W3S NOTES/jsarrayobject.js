@@ -149,9 +149,38 @@ for (let x of b) {
 // every() ✨
 // Checks if every element in an array pass a test
 
+// Executes a function for each array element
+// Returns true if the function returns true for all elements
+// Returns false if the function returns false for one element
+// Does not execute the function for empty elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function() - - - Required; a function to be run for each element in the array
+// currentValue - - - Required; the value of the current element
+// index - - - Optional; the index of the current element
+// arr - - - Optional; the array of the current element
+// thisValue - - - Optional; a value passed to the function as its *this* value; Default is UNDEFINED
+
 // Return Value Type - - - Description
+// A boolean - - - true if all elements pass the test, otherwise false
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+let ages = [70, 71, 72, 73, 74];
+
+let result = ages.every(isOver69)
+
+function isOver69(age) {
+    return age > 69;
+};
+
+console.log(result);
+// omfg I did it, remember to define a variable to console log ⚡
+
+// output
+// true
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // fill() ✨
@@ -168,74 +197,194 @@ for (let x of b) {
 // find()
 // Returns the value of the first element in an array that pass a test
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // findIndex()
 // Returns the index of the first element in an array that pass a test
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // forEach()
 // Calls a function for each array element
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // from()
 // Creates an array from an object
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // includes()
 // Check if an array contains the specified element
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // indexOf()
 // Search the array for an element and returns its position
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // isArray()
 // Checks whether an object is an array
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // join()
 // Joins all elements of an array into a string
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // keys()
 // Returns a Array Iteration Object, containing the keys of the original array
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // lastIndexOf()
 // Search the array for an element, starting at the end, and returns its position
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // map()
 // Creates a new array with the result of calling a function for each array element
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // pop()
 // Removes the last element of an array, and returns that element
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // push()
 // Adds new elements to the end of an array, and returns the new length
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // reduce()
 // Reduce the values of an array to a single value (going left-to-right)
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // reduceRight()
 // Reduce the values of an array to a single value (going right-to-left)
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // reverse()
 // Reverses the order of the elements in an array
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // shift()
 // Removes the first element of an array, and returns that element
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // slice()
 // Selects a part of an array, and returns the new array
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // some()
 // Checks if any of the elements in an array pass a test
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // sort()
 // Sorts the elements of an array
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // splice()
 // Adds/Removes elements from an array
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // toString()
 // Converts an array to a string, and returns the result
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // unshift()
 // Adds new elements to the beginning of an array, and returns the new length
 
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
 // valueOf()
 // Returns the primitive value of an array
+
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // Array Properties 🌷🌿🌻
 
