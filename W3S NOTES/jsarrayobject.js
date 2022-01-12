@@ -651,9 +651,28 @@ console.log(mykidResults);
 // pop() ✨
 // Removes the last element of an array, and returns that element
 
+// Removes the last element of an array
+// Changes the original array
+// Returns the removed element
+
 // Parameter - - - Description
+// NONE!
+
 // Return Value Type - - - Description
+// A variable - - - The removed item; A string, a number, an array, or any type allowed in an array
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const demonNames = ["Satan", "Lucifer", "The Devil"];
+// had to honor 666 lol
+
+let removedD = demonNames.pop();
+
+console.log(`The removed name is: ${removedD} 👿`);
+
+// output
+// The removed name is: The Devil 👿
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // push() ✨
