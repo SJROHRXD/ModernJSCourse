@@ -259,9 +259,52 @@ console.log(result2);
 // find() ✨
 // Returns the value of the first element in an array that pass a test
 
+// Returns the value of the first element that passes a test
+// Executes a function for each array element
+// Returns UNDEFINED if no elements are found
+// Does not execute the function for empty elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function() - - - Required; a function to run for each array element
+// currentValue - - - Required; the value of the current element
+// index - - - Optional; the index of the current element
+// arr - - - Optional; the array of the current element
+// thisValue - - - Optional, a value passed to the function as its *this* value; Default UNDEFINED
+
 // Return Value Type - - - Description
+// A Value - - - the value of the first element that passes the test; otherwise returns UNDEFINED
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const numbers = [2, 4, 6, 8, 11];
+const result3 = numbers.find(checkEven);
+
+function checkEven(number) {
+    return number % 2 == 0;
+};
+
+console.log(`🌻🌿🌷 The first even number is ${result3}! 🌻🌿🌷`);
+// had to make this more interesting
+
+// output
+// 🌻🌿🌷 The first even number is 2! 🌻🌿🌷
+
+// Again!
+const nummies = [3, 5, 20, 22];
+const result4 = nummies.find(checkEvener);
+
+function checkEvener(nummy) {
+    return nummy % 2 == 0;
+};
+
+console.log(`🌻🌿🌷 The first even number is ${result4}! 🌻🌿🌷`);
+
+// output
+// 🌻🌿🌷 The first even number is 20! 🌻🌿🌷
+// wait so how do I do an odd number without an if/else
+// nvm that's for when I'm not tired
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // findIndex() ✨
