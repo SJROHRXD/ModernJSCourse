@@ -217,9 +217,43 @@ console.log(originalA);
 // filter() ✨
 // Creates a new array with every element in an array that pass a test
 
+// Creates a new array filled with elements that pass a test provided by a function
+// Does not execute function for empty elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function() - - - Required; a function to run for each array element
+// currentValue - - - Required; the value of the current element
+// index - - - Optional; the index of the current element
+// arr - - - Optional; the array of the current element
+// thisValue - - - Optional; a value passed to the function as its *this* value; Default is UNDEFINED
+
 // Return Value Type - - - Description
+// An array - - - containing the elements that pass the test; if no elements pass test an empty array will be returned
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+let ages2 = [1, 2, 3, 69, 99];
+
+let result2 = ages2.filter(isAdult)
+
+// currentValue is the value of the elements in the ages2 array
+// isAdult is the required function
+// age is the thisValue
+// I think lol
+
+function isAdult(age) {
+    return age >= 18;
+};
+
+console.log(result2);
+
+// output
+// (2) [69, 99]
+    // 0: 69
+    // 1: 99
+    // length: 2
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // find() ✨
