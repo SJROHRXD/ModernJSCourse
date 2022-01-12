@@ -463,9 +463,29 @@ console.log(`The index position of Peony in the 🌼 flowers 🌼 array is: ${re
 // isArray() ✨
 // Checks whether an object is an array
 
+// Returns true if an object is an array, otherwise false
+
+// Array.isArray() is a static property of the JavaScript Array object
+// You can only use it as Array.isArray()
+// Using x.isArray(), where x is an array, will return UNDEFINED
+
 // Parameter - - - Description
+// obj - - - Required; an object (or any data type) to be tested
+
 // Return Value Type - - - Description
+// A boolean - - - true if object is an array, otherwise false
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const nebulae = ["Cat's Eye", "Medusa", "Lemon Slice", "Soap Bubble"];
+let resultNebbies = Array.isArray(nebulae);
+
+console.log(`Is ✨ nebulae ✨ an array? \n...${resultNebbies}`);
+
+// output
+// Is ✨ nebulae ✨ an array? 
+// ...true
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // join() ✨
