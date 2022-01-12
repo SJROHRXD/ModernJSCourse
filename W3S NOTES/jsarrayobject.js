@@ -524,11 +524,34 @@ document.getElementById("joinmethod2").innerHTML = colorsText2;
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // keys() ✨
-// Returns a Array Iteration Object, containing the keys of the original array
+// Returns an Array Iteration Object, containing the keys of the original array
+
+// Returns an Array Iterator object with the keys of an array
+// Does not change the original array
 
 // Parameter - - - Description
+// NONE!
+
 // Return Value Type - - - Description
+// An array - - - An array Iterator object containing the keys of an array
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const navyRanks = ["Seaman Recruit", "Seaman Apprentice", "Seaman"];
+const keysNR = navyRanks.keys();
+
+let resultsNR = "";
+for (let x of keysNR) {
+    resultsNR += x + ` `;
+};
+// there is a better way to do this and console.log but my brain hurts
+// how can I add a line break to console.log???
+
+console.log(resultsNR);
+
+// output
+// 0 1 2 
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // lastIndexOf() ✨
