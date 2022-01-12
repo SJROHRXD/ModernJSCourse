@@ -11,8 +11,21 @@ var fruits = ["apples", "bananas", "oranges"];
 
 // JavaScript Array Methods 🌷🌿🌻
 
-// concat()
+// concat() ✨
 // Joins two or more arrays, and returns a copy of the joined arrays
+
+// Concatonates (joins) two or more arrays
+// Returns a new array, containing the joined arrays
+// Does not change the existing arrays
+
+// Parameter - - - Description
+// array2 - - - Required
+// array3 - - - The arrays to be joined
+// ...
+// arrayX
+
+// Return Value Type - - - Description
+// An array - - - The joined arrays
 
 // 🤍🐸 E X A M P L E 🤍🐸 //
 
@@ -32,10 +45,58 @@ console.log(foods);
 
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
-// copyWithin()
+// copyWithin() ✨
 // Copies array elements within the array, to and from specified positions
 
-// entries()
+// Copies array elements to another position in the array
+// Overwrites the existing values
+// Does not add items to the array
+
+// Parameter - - - Description
+// target - - - Required; the index (position) to copy the elements to
+// start - - - Optional; the start index (position); default is 0
+// end - - - Optional; the end index (position); default is the array length
+
+// Return Value Type - - - Description
+// An array - - - The changed array
+
+// 🤍🐸 E X A M P L E 🤍🐸 //
+
+var shoes = ["boots", "flats", "heels", "sandals"];
+shoes.copyWithin(2, 0);
+console.log(shoes);
+// will copy the first two array elements to the last two array elements
+// 2 is the target; the target is array position 2, where we will insert our copy
+// 0 is the start; where we begin our copy
+// but why does it know to copy two array elements???
+
+// output
+// (4) ['boots', 'flats', 'boots', 'flats']
+// 0: "boots"
+// 1: "flats"
+// 2: "boots"
+// 3: "flats"
+// length: 4
+
+var shoesAgain = ["boots", "flats", "heels", "sandals", "mules"];
+shoesAgain.copyWithin(2, 0, 1);
+console.log(shoesAgain);
+// copied position zero to position two
+// specifying 1 as the end of the index position copied only boots and stopped at boots
+// interdasting
+
+// output
+// (5) ['boots', 'flats', 'boots', 'sandals', 'mules']
+// 0: "boots"
+// 1: "flats"
+// 2: "boots"
+// 3: "sandals"
+// 4: "mules"
+// length: 5
+
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
+// entries() ✨
 // 	Returns a key/value pair Array Iteration Object
 
 // every()
