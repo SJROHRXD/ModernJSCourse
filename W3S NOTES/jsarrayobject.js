@@ -435,9 +435,29 @@ console.log(`Say "true" if the result contains the name "Charlotte"... \n...${re
 // indexOf() ✨
 // Search the array for an element and returns its position
 
+// Returns the first index (position) of a specified value
+// Returns -1 if the value is not found
+// Starts at specified index and searches from left to right
+// By default, search starts at first element and ends at last
+// Negative start values count from the last element, but still searches from right to left
+
 // Parameter - - - Description
+// item - - - Required; the value to search for
+// start - - - Optional; where to start the search; default value is 0; negative values start search from end of array
+
 // Return Value Type - - - Description
+// A number - - - The index (position) of the first item found; -1 if item not found
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const flowers = ["Dahlia", "Peony", "Cosmo", "Aster"];
+let resultFlowz = flowers.indexOf("Peony");
+
+console.log(`The index position of Peony in the 🌼 flowers 🌼 array is: ${resultFlowz}`);
+
+// ouput
+// The index position of Peony in the 🌼 flowers 🌼 array is: 1
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // isArray() ✨
