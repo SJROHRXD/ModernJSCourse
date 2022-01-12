@@ -557,9 +557,30 @@ console.log(resultsNR);
 // lastIndexOf() ✨
 // Search the array for an element, starting at the end, and returns its position
 
+// Returns the last index (position) of a specified value
+// Returns -1 if the value is not found
+// Starts at specified index and searches from right to left
+// By default, the search starts at the last element and ends at the first
+// Negative start values count from the last element, but still search right to left
+
 // Parameter - - - Description
+// item - - - Required; the value to search for
+// start - - - Optional; where to start the search, default is the last element (array.length-1)
+
 // Return Value Type - - - Description
+// A number - - - The position of the specified item, -1 if the item is not found
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const bread = ["Sourdough", "Rye", "Brioche", "Pumpernickel"];
+let indexB = bread.lastIndexOf("Rye");
+
+console.log(`The last index position of Rye is... \n...${indexB}`);
+
+// output
+// The last index position of Rye is... 
+// ...1
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // map() ✨
