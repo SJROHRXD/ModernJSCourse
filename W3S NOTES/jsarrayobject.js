@@ -408,9 +408,28 @@ console.log(`The array: ${gingArr}`)
 // includes() ✨
 // Check if an array contains the specified element
 
+// Returns true if an array contains a specified value
+// Returns false if the value is not found
+// The method is case sensitive
+
 // Parameter - - - Description
+// element - - - Required; the value to search for
+// start - - - Optional; start position; Default is 0
+
 // Return Value Type - - - Description
+// A boolean - - - true if the value is found; otherwise false
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const kidsNames = ["Sophia", "Charlotte", "Henry", "William"];
+let resultKNs = kidsNames.includes("Charlotte");
+
+console.log(`Say "true" if the result contains the name "Charlotte"... \n...${resultKNs}!`);
+
+// ouput
+// Say "true" if the result contains the name "Charlotte"... 
+// ...true!
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // indexOf() ✨
