@@ -678,9 +678,37 @@ console.log(`The removed name is: ${removedD} 👿`);
 // push() ✨
 // Adds new elements to the end of an array, and returns the new length
 
+// Adds new items to the end of an array
+// Changes the length of the array
+// Returns the new length
+
 // Parameter - - - Description
+// item1 - - - The item/s to add to the array
+// item2 - - - Minimum one item is required
+// ...
+// itemX
+
 // Return Value Type - - - Description
+// A number - - - The new length of the array
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const amphibians = ["Frogs", "Toads", "Salamanders"];
+
+let newPhibs = amphibians.push("Newts");
+
+console.log(newPhibs);
+// returns the length
+
+// output
+// 4
+
+console.log(amphibians);
+// returns arrayed w/ the pushed item
+
+// output
+// (4) ['Frogs', 'Toads', 'Salamanders', 'Newts']
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // reduce() ✨
