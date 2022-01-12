@@ -72,11 +72,11 @@ console.log(shoes);
 
 // output
 // (4) ['boots', 'flats', 'boots', 'flats']
-// 0: "boots"
-// 1: "flats"
-// 2: "boots"
-// 3: "flats"
-// length: 4
+    // 0: "boots"
+    // 1: "flats"
+    // 2: "boots"
+    // 3: "flats"
+    // length: 4
 
 var shoesAgain = ["boots", "flats", "heels", "sandals", "mules"];
 shoesAgain.copyWithin(2, 0, 1);
@@ -87,25 +87,82 @@ console.log(shoesAgain);
 
 // output
 // (5) ['boots', 'flats', 'boots', 'sandals', 'mules']
-// 0: "boots"
-// 1: "flats"
-// 2: "boots"
-// 3: "sandals"
-// 4: "mules"
-// length: 5
+    // 0: "boots"
+    // 1: "flats"
+    // 2: "boots"
+    // 3: "sandals"
+    // 4: "mules"
+    // length: 5
 
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // entries() ✨
-// 	Returns a key/value pair Array Iteration Object
+// Returns a key/value pair Array Iteration Object
 
-// every()
+// Returns an Array Iterator Object with key/value pairs
+// Does not change the original array
+
+// Parameter - - - Description
+// None!
+
+// Return Value Type - - - Description
+// An iterable - - - An array with key/value pairs
+
+// 🤍🐸 E X A M P L E 🤍🐸 //
+
+const birthstones = [
+    "Garnet", 
+    "Amethyst", 
+    "Aquamarine", 
+    "Diamond", 
+    "Emerald", 
+    "Pearl", 
+    "Ruby", 
+    "Peridot", 
+    "Sapphire", 
+    "Opal", 
+    "Citrine", 
+    "Topaz"
+];
+const b = birthstones.entries();
+for (let x of b) {
+    document.getElementById("entriesmethod").innerHTML += x + "<br>";
+}
+
+// output in html doc
+// Demo entries() method:
+    // 0,Garnet
+    // 1,Amethyst
+    // 2,Aquamarine
+    // 3,Diamond
+    // 4,Emerald
+    // 5,Pearl
+    // 6,Ruby
+    // 7,Peridot
+    // 8,Sapphire
+    // 9,Opal
+    // 10,Citrine
+    // 11,Topaz
+
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
+// every() ✨
 // Checks if every element in an array pass a test
 
-// fill()
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
+// fill() ✨
 // Fill the elements in an array with a static value
 
-// filter()
+// Parameter - - - Description
+// Return Value Type - - - Description
+// 🤍🐸 E X A M P L E 🤍🐸 //
+// 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
+
+// filter() ✨
 // Creates a new array with every element in an array that pass a test
 
 // find()
