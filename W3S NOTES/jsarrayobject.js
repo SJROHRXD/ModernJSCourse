@@ -346,9 +346,35 @@ console.log(`🌷 The first "digit" greater than 3 is in this position of the ar
 // forEach() ✨
 // Calls a function for each array element
 
+// Calls a function for each element in an array
+// Not executed for empty elements
+
 // Parameter - - - Description
+// function() - - - Required; a function to run for each array element
+// currentValue - - - Required; the value of the current element
+// index - - - Optional; the index of the current element
+// arr - - - Optional; the array of the current element
+// thisValue - - - Optional; a value passed to the function as its *this* value; Default UNDEFINED
+
 // Return Value Type - - - Description
+// UNDEFINED?
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+let boopNs = [1, 2, 3, 4, 5];
+
+boopNs.forEach(ellie => console.log(`For each: ${ellie}! ⚡`));
+
+// output
+// individually:
+    // For each: 1! ⚡
+    // For each: 2! ⚡
+    // For each: 3! ⚡
+    // For each: 4! ⚡
+    // For each: 5! ⚡
+
+// I know I can do way more with forEach, but this is good for now!
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // from() ✨
