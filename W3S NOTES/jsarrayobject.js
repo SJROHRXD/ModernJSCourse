@@ -759,9 +759,56 @@ console.log(chumbRes);
 // reduceRight() ✨
 // Reduce the values of an array to a single value (going right-to-left)
 
+// Esecutes a reducer function for each array element
+// Works right to left
+// Returns a single value - the function's accumulated result
+// Does not execute the function for empty elements
+
 // Parameter - - - Description
+// function() - - - Required; a function to be run for each element in the array
+// initialValue - - - Optional; a value to be passed to the function as the initial value
+
+// Parameter - - - Description (REDUCER)
+// total - - - Required; the initialValue, or previously returned value of the function
+// currentValue - - - Required; the value of the current element
+// currentIndex - - - Optional; the index of the current element
+// arr - - - Optional; the array the current element belongs to
+
 // Return Value Type - - - Description
+// The accumulated result from the last call of the callback function
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const humbers = [1.3, 2.5, 3.7, 4.8, 5.0];
+let humbRes = humbers.reduce(myHun, 0);
+
+function myHun(total, num) {
+    return total + Math.round(num);
+};
+
+console.log(humbers);
+console.log(humbRes);
+
+// output
+// 18 (same result, just checking!)
+
+// Again, subtracting the numbers in the array, starting from the end
+
+const bumbers = [25, 50, 200];
+let bumbRes = bumbers.reduceRight(myBun);
+
+function myBun(total, num) {
+    return total-num;
+};
+
+console.log(bumbers);
+console.log(bumbRes);
+
+// output bumbers
+// (3) [25, 50, 200]
+// output bumbRes
+// 125
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // reverse() ✨
@@ -774,6 +821,8 @@ console.log(chumbRes);
 
 // shift() ✨
 // Removes the first element of an array, and returns that element
+
+
 
 // Parameter - - - Description
 // Return Value Type - - - Description
