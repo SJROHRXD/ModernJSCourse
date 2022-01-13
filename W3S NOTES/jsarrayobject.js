@@ -814,9 +814,36 @@ console.log(bumbRes);
 // reverse() ✨
 // Reverses the order of the elements in an array
 
+// Reverses the order of the elements in an array
+// Overwrites the original array
+
 // Parameter - - - Description
+// None listed!
+
 // Return Value Type - - - Description
+// The array after it has been reversed
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const pasta = ["Manicotti", "Cannelloni", "Cavatelli", "Ravioli"];
+
+console.log(`Mmm pasta: ${pasta}`)
+
+let revPasta = pasta.reverse();
+
+console.log(revPasta)
+
+// output
+// Mmm pasta: Manicotti,Cannelloni,Cavatelli,Ravioli
+
+// output after reverse
+// (4) ['Ravioli', 'Cavatelli', 'Cannelloni', 'Manicotti']
+    // 0: "Ravioli"
+    // 1: "Cavatelli"
+    // 2: "Cannelloni"
+    // 3: "Manicotti"
+    // length: 4
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // shift() ✨
