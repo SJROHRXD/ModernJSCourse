@@ -714,9 +714,46 @@ console.log(amphibians);
 // reduce() ✨
 // Reduce the values of an array to a single value (going left-to-right)
 
+// Executes a reducer function for the array element
+// Returns a single value - the function's accumulated result
+// Does not execute the function for empty array elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function() - - - Required; a function to be run for each element in the array
+// initialValue - - - Optional; a value to be passed to the function as the initial value
+
+// Parameter - - - Description (REDUCER)
+// total - - - Required; the initialValue, or previously returned value of the function
+// currentValue - - - Required; the value of the current element
+// currentIndex - - - Optional; the index of the current element
+// arr - - - Optional; the array the current element belongs to
+
 // Return Value Type - - - Description
+// The accumulated result from the last call of the callback function
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const chumbers = [1.3, 2.5, 3.7, 4.8, 5.0];
+let chumbRes = chumbers.reduce(myFun, 0);
+
+function myFun(total, num) {
+    return total + Math.round(num);
+};
+
+console.log(chumbers);
+// display the array
+console.log(chumbRes);
+// Compute the sum of the rounded numbers in an array
+
+// output
+// (5) [1.3, 2.5, 3.7, 4.8, 5]
+
+// output pt 2
+// 18
+// 1.3 rounds to 1, 2.5 rounds to 3, 3.7 rounds to 4, 4.8 rounds to 5, 5.0 rounds to 5
+// 5 + 5 + 4 + 3 + 1 = 18 yep
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // reduceRight() ✨
