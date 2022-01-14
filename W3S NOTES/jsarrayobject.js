@@ -1092,9 +1092,31 @@ console.log(`The new array: ${bobsChars}\nThe new array length: ${addBob}`);
 // valueOf() ✨
 // Returns the primitive value of an array
 
+// Returns the array itself
+// Does not change the original array
+
 // Parameter - - - Description
+// None!
+
 // Return Value Type - - - Description
+// An array - - - The valueOf() method returns itself!
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+// so wait, why do I want this
+
+const lastArrayBitch = ["bitch this is the last array", "fuck yeah"];
+
+let lastABVal = lastArrayBitch.valueOf();
+
+console.log(lastABVal);
+
+// output
+// (2) ['bitch this is the last array', 'fuck yeah']
+    // 0: "bitch this is the last array"
+    // 1: "fuck yeah"
+    // length: 2
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // Array Properties 🌷🌿🌻
