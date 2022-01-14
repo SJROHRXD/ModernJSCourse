@@ -1121,11 +1121,66 @@ console.log(lastABVal);
 
 // Array Properties 🌷🌿🌻
 
-// constructor
+// constructor 🧁🍧🍭
 // Returns the function that created the Array object's prototype
 
-// length
+// The constructor property returns the function that created the Array prototype
+// For JavaScript arrays the constructor property returns:
+
+// function Array() { [native code] }
+
+// length 🧁🍧🍭
 // Sets or returns the number of elements in an array
 
-// prototype
+// The length property sets or returns the number of elements in an array
+
+const iLied = ["That was not the last array.", "God dammit."];
+
+let lengthLie = iLied.length;
+
+console.log(lengthLie);
+
+// output
+// 2
+// yup
+
+// prototype 🧁🍧🍭
 // Allows you to add properties and methods to an Array object
+
+// Add new properties and methods to arrays
+// Prototype is a property available with all JavaScript objects
+
+// Only change the prototype of your own objects ⚠
+
+// Can be used to change to uppercase, lowercase, with functions;
+// And add new properties of your own to objects:
+// I have an object that has the properties: Name, Age, Location
+// I can use prototype to add the property: Gender
+
+function Person(nameofperson, ageofperson, cityofperson) {
+    this.Name = nameofperson;
+    this.Age = ageofperson;
+    this.Location = cityofperson;
+};
+
+let Sarah = new Person("Sarah", "32", "Redmond");
+let Nick = new Person("Nick", "33", "Redmond");
+
+Person.prototype.Gender = "Gender will go here?";
+
+console.log(Person);
+
+// Person(nameofperson, ageofperson, cityofperson) {
+    // this.Name = nameofperson;
+    // this.Age = ageofperson;
+    // this.Location = cityofperson;
+
+console.log(Sarah);
+
+// Person {Name: 'Sarah', Age: '32', Location: 'Redmond'}
+
+console.log(Sarah.Gender);
+
+// Gender will go here?
+
+// Well, I'll figure out where it's storing that and why it's not in the Object eventually lol
