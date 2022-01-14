@@ -827,11 +827,11 @@ console.log(bumbRes);
 
 const pasta = ["Manicotti", "Cannelloni", "Cavatelli", "Ravioli"];
 
-console.log(`Mmm pasta: ${pasta}`)
+console.log(`Mmm pasta: ${pasta}`);
 
 let revPasta = pasta.reverse();
 
-console.log(revPasta)
+console.log(revPasta);
 
 // output
 // Mmm pasta: Manicotti,Cannelloni,Cavatelli,Ravioli
@@ -863,13 +863,13 @@ console.log(revPasta)
 
 const nailShapes = ["Coffin", "Oval", "Square", "Ballerina"];
 
-console.log(`Array of nail shapes: ${nailShapes}`)
+console.log(`Array of nail shapes: ${nailShapes}`);
 
 let shiftyNails = nailShapes.shift();
 
 console.log(`Shifted item: ${shiftyNails}`);
 
-console.log(`Array of nail shapes after shift: ${nailShapes}`)
+console.log(`Array of nail shapes after shift: ${nailShapes}`);
 
 // output console.log 1
 // Array of nail shapes: Coffin,Oval,Square,Ballerina
@@ -885,9 +885,28 @@ console.log(`Array of nail shapes after shift: ${nailShapes}`)
 // slice() ✨
 // Selects a part of an array, and returns the new array
 
+// Returns selected elements in an array as a new array
+// Selects from a given start, up to a given end
+// Does not change the original array
+
 // Parameter - - - Description
+// start - - - Optional; start position, negative numbers select from the end of the array; Default is 0
+// end - - - Optional; end position, negative numbers select from the end of the array; Default is 0
+
 // Return Value Type - - - Description
+// A new array containing the selected elements
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const aunts = ["Aunt Alice", "Aunt Connie", "Great Aunt Frances"];
+
+let slicedAunts = aunts.slice(0, 1);
+
+console.log(slicedAunts);
+
+// output
+// ['Aunt Alice']
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // some() ✨
