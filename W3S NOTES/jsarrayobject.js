@@ -849,11 +849,37 @@ console.log(revPasta)
 // shift() ✨
 // Removes the first element of an array, and returns that element
 
-
+// Removes the first item of an array
+// Changes the original array
+// Returns the shifted element
 
 // Parameter - - - Description
+// None!
+
 // Return Value Type - - - Description
+// A variable - - - The removed item; a string, a number, an array, or any type allowed in an array
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const nailShapes = ["Coffin", "Oval", "Square", "Ballerina"];
+
+console.log(`Array of nail shapes: ${nailShapes}`)
+
+let shiftyNails = nailShapes.shift();
+
+console.log(`Shifted item: ${shiftyNails}`);
+
+console.log(`Array of nail shapes after shift: ${nailShapes}`)
+
+// output console.log 1
+// Array of nail shapes: Coffin,Oval,Square,Ballerina
+
+// output console.log 2
+// Shifted item: Coffin
+
+// output console.log 3
+// Array of nail shapes after shift: Oval,Square,Ballerina
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // slice() ✨
