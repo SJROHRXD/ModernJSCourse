@@ -992,9 +992,32 @@ console.log(sortedGreens);
 // splice() ✨
 // Adds/Removes elements from an array
 
+// Adds or Removes array elements
+// Overwrites the original array
+
 // Parameter - - - Description
+// index - - - Required; the position to add/remove items; negative value defines the position from the end of array
+// howmany - - - Optional; the number of items to be removed
+// item1, ..., itemX - - - Optional; the new elements to be added
+
 // Return Value Type - - - Description
+// An array containing the removed items (if any)
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const body = ["head", "shoulders", "knees", "toes"];
+
+console.log(body);
+
+let spliceBody = body.splice(1, 1);
+// at position 1, remove 1 item
+
+console.log(spliceBody);
+
+// output
+// (4) ['head', 'shoulders', 'knees', 'toes']
+// ['shoulders']
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // toString() ✨
