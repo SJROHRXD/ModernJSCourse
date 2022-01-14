@@ -1060,9 +1060,33 @@ console.log(stringBParts);
 // unshift() ✨
 // Adds new elements to the beginning of an array, and returns the new length
 
+// Adds new elements to the beginning of an array
+// Overwrites the original array
+
 // Parameter - - - Description
+// item1 - - - the item(s) to be added to the array
+// item2 - - - minimum one item is required
+// ...
+// itemX
+
 // Return Value Type - - - Description
+// A number - - - the new length of the array
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const bobsChars = ["Linda", "Tina", "Gene", "Louise"];
+
+console.log(bobsChars);
+
+let addBob = bobsChars.unshift("Bob");
+
+console.log(`The new array: ${bobsChars}\nThe new array length: ${addBob}`);
+
+// output
+// (4) ['Linda', 'Tina', 'Gene', 'Louise']
+// The new array: Bob,Linda,Tina,Gene,Louise
+// The new array length: 5
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // valueOf() ✨
