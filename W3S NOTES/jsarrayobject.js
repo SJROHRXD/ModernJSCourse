@@ -1023,9 +1023,38 @@ console.log(spliceBody);
 // toString() ✨
 // Converts an array to a string, and returns the result
 
+// Returns a string with array values separated by commas
+// Does not change the original array
+
+// This method is often used internally by JavaScript when an object needs to be displayed as text, etc
+
 // Parameter - - - Description
+// None!
+
 // Return Value Type - - - Description
+// A string - - - The array values separated by commas
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const bodyParts = ["eyes", "ears", "mouth", "nose"];
+
+console.log(bodyParts);
+
+let stringBParts = bodyParts.toString();
+
+console.log(stringBParts);
+
+// output
+// (4) ['eyes', 'ears', 'mouth', 'nose']
+    // 0: "eyes"
+    // 1: "ears"
+    // 2: "mouth"
+    // 3: "nose"
+    // length: 4
+
+// output 2
+// eyes,ears,mouth,nose
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // unshift() ✨
