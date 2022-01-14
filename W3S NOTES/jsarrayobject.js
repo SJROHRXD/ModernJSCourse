@@ -952,9 +952,41 @@ console.log(cucUmResult);
 // sort() ✨
 // Sorts the elements of an array
 
+// Sorts the elements of an array
+// Overwrites the original array
+// Sorts the elements as strings in alphabetical and ascending order
+
+// Provide a compare function to assist with sorting numbers like 25, 100
+
 // Parameter - - - Description
+// compareFunction - - - Optional; a function that defines a sort order
+// This function should return a negative, zero, or positive value, depending on the arguments
+// function(a, b) { return a-b }
+// When sort() compares two values, it sends the values to the compare function
+// then sorts the values according to the returned (negative, zero, positive) value
+
+// this is a bit tricky
+// want to try more complex sort() functions later
+
 // Return Value Type - - - Description
+// The array with the items sorted
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const greens = ["Kale", "Arugula", "Bok Choy", "Spinach", "Cabbage"];
+
+console.log(greens);
+
+let sortedGreens = greens.sort();
+
+console.log(sortedGreens);
+
+// output
+// (5) ['Kale', 'Arugula', 'Bok Choy', 'Spinach', 'Cabbage']
+
+// output 2
+// (5) ['Arugula', 'Bok Choy', 'Cabbage', 'Kale', 'Spinach']
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // splice() ✨
