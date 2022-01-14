@@ -912,9 +912,41 @@ console.log(slicedAunts);
 // some() ✨
 // Checks if any of the elements in an array pass a test
 
+// Checks if any array elements pass a test (provided as a function)
+// Exectutes the function once for each array element
+// If the function returns true, some() returns true and stops
+// If the function returns false, some() returns false and stops
+// Does not execute the function for empty array elements
+// Does not change the original array
+
 // Parameter - - - Description
+// function - - - Required; a function to run for each array element
+// this - - - Optional; Default UNDEFINED
+
+// Function Parameters - - - Description
+// value - - - Required; the value of the current element
+// index - - - Optional, the index of the current element
+// arr - - - Optional, the array the current element belongs to
+
 // Return Value Type - - - Description
+// A boolean - - - true if any of the array elements pass the test, otherwise false
+
 // 🤍🐸 E X A M P L E 🤍🐸 //
+
+const cucUmbers = [6, 12, 18, 24, 26];
+
+let cucUmResult = cucUmbers.some(checkSix);
+
+function checkSix(six) {
+    return six % 6 == 0;
+};
+
+console.log(cucUmResult);
+
+// output
+// true
+// awesome. some are divisble by 6 so it passes!
+
 // 🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸🤍🐸 //
 
 // sort() ✨
