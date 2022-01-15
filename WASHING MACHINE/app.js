@@ -2,6 +2,8 @@
 // Add Detergent or Bleach
 // Add Fabric Softener
 
+// detergent, bleach, fabric softener determine what in end result of code
+
 // is machine loaded? t/f? then run machine okay
 
 // Select Temp
@@ -20,4 +22,4 @@
 // Loop through idk Clothes
 // Iterations until clean???
 
-// 
+// countdown / timer for certain things like spin speed and temp
