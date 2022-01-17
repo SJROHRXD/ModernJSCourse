@@ -23,3 +23,7 @@
 // Iterations until clean???
 
 // countdown / timer for certain things like spin speed and temp
+
+// add a chime
+
+// async / await - something. something. idk what yet.
