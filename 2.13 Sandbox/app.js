@@ -42,12 +42,30 @@ numbers.splice(1,1);
 // reverse
 numbers.reverse();
 
-// Concatenate Array
+// concatenate
 val = numbers.concat(numbers2);
 
-// Sort Array
-val = 
+// sort
+val = fruit.sort();
+val = numbers.sort();
 
+// use compare function to assist sort
+val = numbers.sort(function(x, y){
+    return x - y;
+});
 
+// reverse sort
+val = numbers.sort(function(x, y){
+    return y - x;
+});
+
+// find
+function under50(num) {
+    return num < 50;
+};
+
+val = numbers.find(under50);
+
+// Output 🤍🌷🌼
 console.log(numbers);
 console.log(val);
