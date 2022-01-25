@@ -56,3 +56,11 @@ Any arguments given in a Date() function call (without the new keyword) are igno
 // Returns: A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 UTC and the date obtained by parsing the given string representation of a date. If the argument doesn't represent a valid date, NaN is returned.
 
 // Date.UTC() ⏰🤍📆
+
+
+const date = new Date();
+const [month, day, year]       = [date.getMonth(), date.getDate(), date.getFullYear()];
+const [hour, minutes, seconds] = [date.getHours(), date.getMinutes(), date.getSeconds()];
+
+console.log(date);
+// Tue Jan 25 2022 01:46:41 GMT-0800 (Pacific Standard Time)
