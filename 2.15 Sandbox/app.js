@@ -29,3 +29,11 @@ new Date(year, monthIndex, day, hours, minutes)
 new Date(year, monthIndex, day, hours, minutes, seconds)
 new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds) */
 
+// Return Value ⏰🤍📆
+/* Calling new Date() (the Date()constructor) returns a Date object.
+
+If called with an invalid date string, it returns a Date object whose toString() method returns the literal string Invalid Date.
+
+Calling the Date() function (without the new keyword) returns a string representation of the current date and time, exactly as new Date().toString() does.
+
+Any arguments given in a Date() function call (without the new keyword) are ignored; regardless of whether it’s called with an invalid date string — or even called wth any arbitrary object or other primitive as an argument — it always returns a string representation of the current date and time. */
