@@ -46,30 +46,30 @@
 
 ---
 
-# Intro & Getting Started <a name="1"></a>
+## Intro & Getting Started <a name="1"></a>
 
-# JavaScript Language Fundamentals <a name="2"></a>
+## JavaScript Language Fundamentals <a name="2"></a>
 
-# DOM Manipulation & Events <a name="3"></a>
+## DOM Manipulation & Events <a name="3"></a>
 
-# <a name="4"></a>
+## DOM Projects <a name="4"></a>
 
-# <a name="5"></a>
+## Object Oriented JavaScript - ES5 & ES2015 <a name="5"></a>
 
-# <a name="6"></a>
+## OOP Book List Project <a name="6"></a>
 
-# <a name="7"></a>
+## Asynchronous JavaScript, Ajax & Fetch API <a name="7"></a>
 
-# <a name="8"></a>
+## API Projects <a name="8"></a>
 
-# <a name="9"></a>
+## Error Handling & Regular Expressions <a name="9"></a>
 
-# <a name="10"></a>
+## Other Newer Features - ES2015+ <a name="10"></a>
 
-# <a name="11"></a>
+## JavaScript Patterns <a name="11"></a>
 
-# <a name="12"></a>
+## Tracalorie Project ~ Using The Module Pattern <a name="12"></a>
 
-# <a name="13"></a>
+## Wrap Up <a name="13"></a>
 
-# <a name="14"></a>
+## Contact <a name="14"></a>
