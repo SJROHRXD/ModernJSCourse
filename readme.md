@@ -1,4 +1,10 @@
-# Modern JS From The Beginning Projects
+# Modern JS From The Beginning
+
+*Notes on the Udemy Course "Modern JS From The Beginning" from Brad Traversy*
+
+---
+
+## Modern JS From The Beginning Projects
 
 > These are the main projects from my [Modern JS From The Beginning Udemy course](https://www.udemy.com/course/modern-javascript-from-the-beginning/)
 
@@ -13,6 +19,7 @@
 - Tracalorie: Module Pattern
 - Microposts: Webpack & Modules
 
+---
 
 ## Contents
 
