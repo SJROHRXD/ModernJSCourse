@@ -38,12 +38,12 @@ Calling the Date() function (without the new keyword) returns a string represent
 
 Any arguments given in a Date() function call (without the new keyword) are ignored; regardless of whether it’s called with an invalid date string — or even called wth any arbitrary object or other primitive as an argument — it always returns a string representation of the current date and time. */
 
-// Date.now()
+// Date.now() ⏰🤍📆
 
 // The static Date.now() method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
 // Returns: A Number representing the milliseconds elapsed since the UNIX epoch.
 
-// Date.parse()
+// Date.parse() ⏰🤍📆
 // The Date.parse() method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or NaN if the string is unrecognized or, in some cases, contains illegal date values (e.g. 2015-02-31).
 
 // It is not recommended to use Date.parse as until ES5, parsing of strings was entirely implementation dependent. There are still many differences in how different hosts parse date strings, therefore date strings should be manually parsed (a library can help if many different formats are to be accommodated).
@@ -54,3 +54,5 @@ Any arguments given in a Date() function call (without the new keyword) are igno
 // Implicit Call
 // new Date(dateString)
 // Returns: A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 UTC and the date obtained by parsing the given string representation of a date. If the argument doesn't represent a valid date, NaN is returned.
+
+// Date.UTC() ⏰🤍📆
