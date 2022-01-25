@@ -42,3 +42,15 @@ Any arguments given in a Date() function call (without the new keyword) are igno
 
 // The static Date.now() method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
 // Returns: A Number representing the milliseconds elapsed since the UNIX epoch.
+
+// Date.parse()
+// The Date.parse() method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or NaN if the string is unrecognized or, in some cases, contains illegal date values (e.g. 2015-02-31).
+
+// It is not recommended to use Date.parse as until ES5, parsing of strings was entirely implementation dependent. There are still many differences in how different hosts parse date strings, therefore date strings should be manually parsed (a library can help if many different formats are to be accommodated).
+
+// Direct Call
+// Date.parse(dateString)
+
+// Implicit Call
+// new Date(dateString)
+// Returns: A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 UTC and the date obtained by parsing the given string representation of a date. If the argument doesn't represent a valid date, NaN is returned.
