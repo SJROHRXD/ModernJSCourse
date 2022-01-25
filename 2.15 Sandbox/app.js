@@ -37,3 +37,8 @@ If called with an invalid date string, it returns a Date object whose toString()
 Calling the Date() function (without the new keyword) returns a string representation of the current date and time, exactly as new Date().toString() does.
 
 Any arguments given in a Date() function call (without the new keyword) are ignored; regardless of whether it’s called with an invalid date string — or even called wth any arbitrary object or other primitive as an argument — it always returns a string representation of the current date and time. */
+
+// Date.now()
+
+// The static Date.now() method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
+// Returns: A Number representing the milliseconds elapsed since the UNIX epoch.
