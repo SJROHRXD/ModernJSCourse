@@ -89,15 +89,15 @@ val1 = today.getTime(); // time stamp
 birthday.setMonth(3); // omg is it like index position based lol
 
 // JAN - 0
-// FEB - 01
-// MARCH - 02
-// APRIL - 03
-// MAY - 04
-// JUNE - 05
-// JULY - 06
-// AUG - 07
-// SEPT - 08
-// OCT - 09
+// FEB - 1
+// MARCH - 2
+// APRIL - 3
+// MAY - 4
+// JUNE - 5
+// JULY - 6
+// AUG - 7
+// SEPT - 8
+// OCT - 9
 // NOV - 10
 // DEC - 11
 
