@@ -64,3 +64,6 @@ const [hour, minutes, seconds] = [date.getHours(), date.getMinutes(), date.getSe
 
 console.log(date);
 // Tue Jan 25 2022 01:46:41 GMT-0800 (Pacific Standard Time)
+
+// Actual Video Date Notes
+
