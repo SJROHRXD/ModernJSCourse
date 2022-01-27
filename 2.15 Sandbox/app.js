@@ -67,3 +67,41 @@ console.log(date);
 
 // Actual Video Date Notes
 
+let val1;
+
+const today = new Date();
+let birthday = new Date('04-27-1989');
+let birthday = new Date('April 27 1989');
+
+
+val1 = today.getMonth();
+val1 = today.getFullYear();
+val1 = today.getUTCFullYear(); // difference here
+val1 = today.getDate();
+val1 = today.getDay();
+val1 = today.getHours();
+val1 = today.getMinutes();
+val1 = today.getSeconds();
+val1 = today.getMilliseconds();
+val1 = today.getTime(); // time stamp
+
+
+birthday.setMonth(3); // omg is it like index position based lol
+
+// JAN - 0
+// FEB - 01
+// MARCH - 02
+// APRIL - 03
+// MAY - 04
+// JUNE - 05
+// JULY - 06
+// AUG - 07
+// SEPT - 08
+// OCT - 09
+// NOV - 10
+// DEC - 11
+
+// val1 = birthday;
+// val1 = today.toString();
+
+console.log(typeof val1);
